@@ -28,7 +28,7 @@ public class MainController {
         // @RequestParam means it is a parameter from the GET or POST request
 
         Client n = new Client(
-                nom, identifiant, prenom, compteCourants
+                nom, identifiant, prenom
         );
         clientRepository.save(n);
         return "Saved";

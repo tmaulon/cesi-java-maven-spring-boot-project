@@ -18,11 +18,12 @@ public class Client {
     private List<CompteCourant> compteCourants;
 
     public Client() {}
-    public Client(String identifiant, String nom, String prenom, List<CompteCourant> compteCourants) {
+    /*public Client(String identifiant, String nom, String prenom, List<CompteCourant> compteCourants) {*/
+    public Client(String identifiant, String nom, String prenom) {
         this.identifiant = identifiant;
         this.nom = nom;
         this.prenom = prenom;
-        this.compteCourants = compteCourants;
+        /*this.compteCourants = compteCourants;*/
     }
 
     /*public String toString() {
