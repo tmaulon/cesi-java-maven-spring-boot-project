@@ -123,7 +123,6 @@ public class MainController {
         if (clientOptional.get().getCompteCourants() != null)
         {
             comptesCourants.addAll(clientOptional.get().getCompteCourants());
-            /*return String.valueOf(comptesCourants);*/
             List<String> s = new ArrayList<>();
             comptesCourants.forEach(
                     compteCourant -> {

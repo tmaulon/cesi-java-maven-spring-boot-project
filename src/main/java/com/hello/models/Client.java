@@ -18,18 +18,17 @@ public class Client {
     private List<CompteCourant> compteCourants;
 
     public Client() {}
-    /*public Client(String identifiant, String nom, String prenom, List<CompteCourant> compteCourants) {*/
     public Client(String identifiant, String nom, String prenom) {
         this.identifiant = identifiant;
         this.nom = nom;
         this.prenom = prenom;
-        /*this.compteCourants = compteCourants;*/
     }
 
     /*public String toString() {
         return "Le client : " + this.nom + " " + this.prenom + " avec l'identifiant " + this.identifiant + " a un compte courant qui s'élève à un montant de : " + this.compteCourant.getSolde() ;
     }*/
 
+    //<editor-fold desc="GETTER & SETTER Client">
     public Integer getId() {
         return id;
     }
@@ -64,5 +63,6 @@ public class Client {
     public void setCompteCourants(List<CompteCourant> compteCourants) {
         this.compteCourants = compteCourants;
     }
+    //</editor-fold>
 
 }

@@ -11,6 +11,6 @@ public class TestClient {
     {
         Client client1 = new Client("IDB82-ADB-89", "Dupont", "Bertrand");
         assertEquals("Dupont", client1.getNom());
-
     }
+
 }

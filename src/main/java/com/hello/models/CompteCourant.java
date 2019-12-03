@@ -34,7 +34,22 @@ public class CompteCourant {
         return "Le compte courant N° " + this.numero + " intitulé " + this.intitule + " a un solde " + this.solde + " avec un montant découvert autorisé de : " + this.montantDecouvertAutorise ;
     }*/
 
+    public void crediter(int i) throws Exception {
+        if( i <= 0 ) {
+            throw new Exception("Vous ne pouvez pas créditer d'un montant inférieur ou égal à 0 !");
+        }
+        this.solde += i;
+    }
 
+    public void debiter(int i) throws Exception {
+        if( i <= 0 ) {
+            throw new Exception("Vous ne pouvez pas débiter d'un montant inférieur ou égal à 0 !");
+        }
+        this.solde -= i;
+    }
+
+
+    //<editor-fold desc="GETTER & SETTER All Comptes Courant">
     public String getNumero() {
         return numero;
     }
@@ -69,4 +84,6 @@ public class CompteCourant {
     public void setClient(Client client) {
         this.client = client;
     }
+    //</editor-fold>
+
 }
